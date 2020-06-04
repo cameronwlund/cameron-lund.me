@@ -83,6 +83,10 @@
   width: 200px;
 }
 
+.google-iq-logo {
+  width: 105px;
+}
+
 .featurette-image {
   border: 3px solid #F50D7F;
 }
@@ -103,6 +107,10 @@
 
 .card-height-fix {
   height: 220px
+}
+
+.skill-graph {
+  width: 600px;
 }
 
 .footer {
@@ -128,7 +136,15 @@
   }
 }
 
-@media only screen and (min-width: 772px) {
+
+
+
+@media only screen and (min-width: 768px) {
+
+
+  .services-intro {
+    width: 75%;
+  }
 
   .featurette-article-r {
     text-align: right;
@@ -155,7 +171,7 @@
   }
 
   .hero-image {
-  background-image: url('../Assets/Jumbotron/jumbotron-background-desktop.png');
+    background-image: url('../Assets/Jumbotron/jumbotron-background-desktop.png');
   }
 
   .services-image {
