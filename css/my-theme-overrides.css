@@ -67,6 +67,31 @@
   padding-top: 190px;
 }
 
+.main-body {
+  max-width: 1200px;
+}
+
+.quotation-box {
+  height: auto;
+  width: 90%;
+  padding-top: 10px;
+  border: 4px solid #F50D7F;
+  display: flex;
+}
+
+.quotation-mark {
+  opacity: 0.1;
+  height: 70px;
+  left: 0px;
+}
+
+.quotation-text {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: normal;
+
+}
+
 .carousel {
   display: none;
 }
@@ -143,7 +168,7 @@
 
 
   .services-intro {
-    width: 75%;
+    width: 56%;
   }
 
   .featurette-article-r {
@@ -168,6 +193,10 @@
     padding-top: 150px;
     max-width: 992px;
     margin: 0 auto;
+  }
+
+  .desktop-contact-containers {
+    width: 90%;
   }
 
   .hero-image {

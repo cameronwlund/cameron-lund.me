@@ -22,11 +22,36 @@
   <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicons/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KXJS6Z8');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168583953-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-168583953-1');
+  </script>
+
+
 </head>
 
 <body class="mb-0">
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KXJS6Z8"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   <nav class="navbar navbar-dark bg-black navbar-expand-lg">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="#">
       <img class="mr-2" src="Assets/favicons/favicon-32x32.png" width="30" height="30" class="d-inline-block align-top" alt="Cameron Lund Logo" loading="lazy">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +80,7 @@
       <br>
       <h1 class="text-center title mt-3">UP YOUR<br>DIGITAL GAME</h1>
       <p class="text-light subtitle mt-3 mb-4 pl-3 pr-3">WITH A FREELANCE DIGITAL MARKETING CONSULTANT</p>
-      <a href="contact.html"><button type="button" class="btn btn-primary small">Book A Free Consultation</button></a>
+      <a href="contact.html"><button id="bookaconsultation" type="button" class="btn btn-primary small">Book A Free Consultation</button></a>
     </div>
 
     <!-- Main Body Content Container -->
@@ -68,7 +93,20 @@
       </div>
 
       <!-- Card Container -->
-      <div class="card-container">
+      <div class="card-container main-body">
+
+        <div class="mt-4 mb-5">
+          <div class="container quotation-box m-auto p-3 m-1 position-relative">
+            <p class="quotation-text text-left p-3 m-0" style="opacity:0; height:auto;">A digital marketing freelancer is a vital asset for organisations looking to make quick and effective optimisations to their digital strategy in these uncertain times.<br><br>Get the experience you need at an affordable cost, without having to make a longer-term commitment.</p>
+              <div class="container position-absolute">
+                <img class="quotation-mark float-left position-absolute"  src="Assets\favicons\favicon-white.png">
+                <p class="quotation-text float-left pl-1 text-left pt-4 pr-5 position-absolute"><span class="text-primary"><strong>A digital marketing freelancer</strong></span> is a vital asset for organisations looking to make quick and effective optimisations to their digital strategy in these uncertain times.<br><br>Get the experience you need at an affordable cost, without having to make a longer-term commitment.</p>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="main-body m-auto p-0">
 
         <!-- About Me -->
       <div class="text-center m-auto w-90 card">
@@ -93,10 +131,9 @@ As a consultant I can help demystify the path to success in today’s highly-com
           </div>
         </div>
 
-
         <!-- Previous Employers -->
         <div class="container text-center mt-5">
-          <p class="lead">Previous Employers</p>
+          <p class="lead">Employers</p>
           <div class="container">
             <div class="row">
               <div class="col-sm pt-3">
@@ -111,9 +148,6 @@ As a consultant I can help demystify the path to success in today’s highly-com
             </div>
           </div>
         </div>
-
-
-
 
           <!-- Services -->
           <div class="text-center m-auto w-90 card">
@@ -156,19 +190,19 @@ As a consultant I can help demystify the path to success in today’s highly-com
                   <div class="card-header" id="headingOne">
                     <h2 class="mb-0">
                       <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Digital Strategy
+                        <strong>Digital Strategy</strong>
                       </button>
                     </h2>
                   </div>
 
                   <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
-                      <p>Using strategy frameworks from the <a target=”_blank” href="https://digitalmarketinginstitute.com/en-gb">Digital Marketing Institute</a>, I can assess your business from a digital marketing perspective and make empirical suggestions on where you can improve.</p>
+                      <p>Using strategy frameworks from the <a target=”_blank” href="https://digitalmarketinginstitute.com/en-gb">Digital Marketing Institute</a>, I can assess your business from a digital marketing perspective and make empirical recommendations on where you can improve.</p>
                         <ul class="list-unstyled">
                           <li><strong>Services:</strong></li>
-                          <li>Competitor Analyses</li>
-                          <li>Channel Strategies</li>
-                          <li>Business Strategies</li>
+                          <li class="pt-2">- Competitor Analyses</li>
+                          <li class="pt-2">- Channel Strategies</li>
+                          <li class="pt-2">- Business Strategies</li>
                         </ul>
                     </div>
                   </div>
@@ -177,7 +211,7 @@ As a consultant I can help demystify the path to success in today’s highly-com
                   <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
                       <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Web Analytics
+                        <strong>Web Analytics</strong>
                       </button>
                     </h2>
                   </div>
@@ -186,9 +220,9 @@ As a consultant I can help demystify the path to success in today’s highly-com
                       <p>If you need to monitor your online performance, I can implement Google Analytics and channel-specific analytics tools to track customer behaviour and marketing KPIs. I also have extensive experience building marketing performance dashboards using services like <a target="_blank" href="https://www.powerbi.com">Power BI</a> and <a target="_blank" href="https://www.tableau.com">Tableau.</a></p>
                         <ul class="list-unstyled">
                           <li><strong>Services:</strong></li>
-                          <li>Analytics Implementation</li>
-                          <li>Performance Analysis</li>
-                          <li>Performance Dashboards Creation</li>
+                          <li class="pt-2">- Analytics Implementation</li>
+                          <li class="pt-2">- Performance Analysis</li>
+                          <li class="pt-2">- Performance Dashboards</li>
                         <ul>
                     </div>
                   </div>
@@ -197,7 +231,7 @@ As a consultant I can help demystify the path to success in today’s highly-com
                   <div class="card-header" id="headingThree">
                     <h2 class="mb-0">
                       <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        SEO
+                        <strong>Search Engine Optimisation</strong>
                       </button>
                     </h2>
                   </div>
@@ -206,9 +240,9 @@ As a consultant I can help demystify the path to success in today’s highly-com
                       <p>I can conduct a full audit of your website using leading industry SEO tools like <a target="_blank" href="https://www.screamingfrog.co.uk/">Screaming Frog</a> and <a target="_blank" href="https://www.ahrefs.com">Ahrefs</a> to help boost your organic rank across search engines.</p>
                       <ul class="list-unstyled">
                         <li><strong>Services:</strong></li>
-                        <li>On-site SEO Review</li>
-                        <li>Outreach and Backlink Acquisition</li>
-                        <li>Content Strategy</li>
+                        <li class="pt-2">- On-site SEO Review</li>
+                        <li class="pt-2">- Outreach & Backlink Acquisition</li>
+                        <li class="pt-2">- Content Strategy</li>
                       </ul>
                     </div>
                   </div>
@@ -217,7 +251,7 @@ As a consultant I can help demystify the path to success in today’s highly-com
                   <div class="card-header" id="headingFour">
                     <h2 class="mb-0">
                       <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        PPC
+                        <strong>Pay Per Click</strong>
                       </button>
                     </h2>
                   </div>
@@ -226,9 +260,9 @@ As a consultant I can help demystify the path to success in today’s highly-com
                       <p>Looking to improve your returns on Pay Per Click Advertising? I can build, execute and optimise campaigns so you can get the most out of your PPC budget.</p>
                       <ul class="list-unstyled">
                         <li><strong>Services:</strong></li>
-                        <li>Campaign Creation</li>
-                        <li>Keyword Research</li>
-                        <li>Ad Creation</li>
+                        <li class="pt-2">- Campaign Creation</li>
+                        <li class="pt-2">- Keyword Research</li>
+                        <li class="pt-2">- Ad Creation</li>
                       </ul>
                     </div>
                   </div>
@@ -237,18 +271,20 @@ As a consultant I can help demystify the path to success in today’s highly-com
                   <div class="card-header" id="headingFive">
                     <h2 class="mb-0">
                       <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        Web Design
+                        <strong>Web Design</strong>
                       </button>
                     </h2>
                   </div>
                   <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
                     <div class="card-body">
                     <p>I've created responsive websites from scratch, including the one you are viewing now.<br><br>With my intermediate knowledge of HTML, CSS and the Bootstrap framework I can build static web pages to help promote your services.</p>
-                    <ul class="list-unstyled">
-                      <li><strong>Services:</strong></li>
-                      <li>Landing Page Design</li>
-                      <li>Landing Page Build</li>
-                    </ul>
+                    <strong>Services:</strong>
+                    <div class="container m-auto">
+                      <ul class="list-unstyled">
+                        <li class="pt-2">- Landing Page Design</li>
+                        <li class="pt-2">- Landing Page Build</li>
+                      </ul>
+                  </div>
                   </div>
                 </div>
                 </div>
@@ -256,7 +292,7 @@ As a consultant I can help demystify the path to success in today’s highly-com
                   <div class="card-header" id="headingSix">
                     <h2 class="mb-0">
                       <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseFive">
-                        Email Marketing
+                        <strong>Email Marketing</strong>
                       </button>
                     </h2>
                   </div>
@@ -265,9 +301,9 @@ As a consultant I can help demystify the path to success in today’s highly-com
                       <p>If you have a user database and would like to increase engagement via email, I can manage the communications process or assist with specific aspects of delivering email campaigns.</p>
                         <ul class="list-unstyled">
                           <li><strong>Services:</strong></li>
-                          <li>Building An Efficient Communications Workflow</li>
-                          <li>Email Template Design</li>
-                          <li>Campaign Automation</li>
+                          <li class="pt-2">- Campaign Workflows</li>
+                          <li class="pt-2">- Email Template Design</li>
+                          <li class="pt-2">- Campaign Automation</li>
                         </ul>
                     </div>
                   </div>
@@ -311,7 +347,7 @@ As a consultant I can help demystify the path to success in today’s highly-com
             <div class="card mb-3">
               <div class="card-body">
                 <h5 class="card-title text-primary">Testimonials</h5>
-                <p class="card-text">I've recently transitioned to freelance consulting from full time employment. If you would like to see what other people think about working with me, head over to the recommendations on my LinkedIn Profile.</p>
+                <p class="card-text">I've recently started offering freelance consulting services. If you would like to see what my employers and colleagues think about working with me, head over to the recommendations on my LinkedIn Profile.</p>
                 <a target="_blank" href="https://www.linkedin.com/in/cameronlund/?originalSubdomain=uk"><button type="button" class="btn btn-primary small">View Recommendations</button></a>
               </div>
             </div>
@@ -335,14 +371,18 @@ As a consultant I can help demystify the path to success in today’s highly-com
           </div>
 
         </div>
+
+        </div>
       </div>
 
     <!-- Footer -->
 
-
-    <footer class="container-fluid bg-black pt-5 pb-5 m-0 text-center footer">
-      <img src="./Assets\favicons\favicon-32x32.png" /><p class="text-light small pt-2">Website created by Cameron Lund</p>
+    <footer class="container-fluid bg-black pt-5 pb-5 mt-0 text-center footer">
+      <img src="./Assets\favicons\favicon-32x32.png" />
+      <p class="text-light small pt-2">Website created by Cameron Lund</p>
+      <a target="_blank" href="https://www.linkedin.com/in/cameronlund/"><img style="width:24px;" src="./Assets\Companies\linkedin-transparent.png" /></a>
     </footer>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

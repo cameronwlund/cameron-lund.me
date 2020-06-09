@@ -22,9 +22,33 @@
   <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicons/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KXJS6Z8');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168583953-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-168583953-1');
+  </script>
+
 </head>
 
 <body class="mb-0 bg-secondary">
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KXJS6Z8"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   <nav class="navbar navbar-dark bg-black navbar-expand-lg">
     <a class="navbar-brand" href="./index.html">
       <img class="mr-2" src="Assets/favicons/favicon-32x32.png" width="30" height="30" class="d-inline-block align-top" alt="Cameron Lund Logo" loading="lazy">
@@ -54,19 +78,31 @@
       <br>
       <h1 class="text-center title mt-3 pl-2 pr-2">BEAM ME UP<br>SCOTTY</h1>
       <p class="text-light subtitle mt-3 mb-4 pl-3 pr-3">BOOK A FREE ONLINE CONSULTATION</p>
-      <a href="#contact-form-anchor"><button type="button" class="btn btn-primary small">Get In Touch</button></a>
+      <a href="#contact-methods-anchor"><button type="button" class="btn btn-primary small">Get In Touch</button></a>
     </div>
 
     <div class="container-fluid bg-secondary pb-0 pt-5 text-center">
       <div class="card w-90 p-4 m-auto">
         <h5 class="card-title text-primary">Let's Talk</h5>
-        <p>I’m based in South East London and can meet face-to-face with clients based in the surrounding areas.<br><br>If you’re not nearby then I'm usually working remotely anyway, making use of videoconferencing tools, email, WhatsApp or good old-fashioned phone calls to get the job done.</p>
+        <p>I usually work remotely by making use of videoconferencing tools, email, WhatsApp or good old-fashioned phone calls. Feel free to reach out via any of the channels listed below to get the conversation started.</p><br>
+        <p>I’m also based in South East London and can meet face-to-face with clients in the surrounding areas if required.<br>
       </div>
     </div>
   </div>
 
-    <div class="container pt-5 m-auto text-center pl-0 pr-0">
+    <div id="contact-methods-anchor" class="container-fluid desktop-contact-containers pt-5 m-auto text-center pl-0 pr-0">
       <div class="row m-auto">
+        <div class="col-sm mb-5">
+          <div class="card m-auto" style="width: 18rem;">
+            <div class="card-body card-height-fix">
+              <div class="container" style="height:50px;">
+                <img src="./Assets\icons\linkedin.png" class="icons card-img-top m-auto pt-3" alt="LinkedIn Icon">
+              </div>
+              <h5 class="card-title text-primary pt-4">LinkedIn</h5>
+              <a href="https://www.linkedin.com/in/cameronlund/"><button type="button" class="btn btn-primary small">View Profile</button></a>
+            </div>
+          </div>
+        </div>
         <div class="col-sm mb-5">
           <div class="card m-auto" style="width: 18rem;">
             <div class="card-body card-height-fix">
@@ -82,7 +118,7 @@
           <div class="card m-auto" style="width: 18rem;">
             <div class="card-body card-height-fix">
               <div class="container" style="height:50px;">
-                <img src="./Assets\icons\mail.png" class="icons card-img-top m-auto pt-3" alt="Phone Icon">
+                <img src="./Assets\icons\mail.png" class="icons card-img-top m-auto pt-3" alt="Email Icon">
               </div>
               <h5 class="card-title text-primary pt-4">Email</h5>
               <p class="card-text">cameron@cameron-lund.me</p>
@@ -93,10 +129,10 @@
           <div class="card m-auto" style="width: 18rem;">
             <div class="card-body card-height-fix">
               <div class="container" style="height:50px;">
-                <img src="./Assets\icons\home.png" class="icons card-img-top m-auto pt-3" alt="Phone Icon">
+                <img src="./Assets\icons\form.png" class="icons card-img-top m-auto pt-3" alt="Form Icon">
               </div>
-              <h5 class="card-title text-primary pt-4">Address</h5>
-              <p class="card-text">24c Denman Road, London, SE15 5NP</p>
+              <h5 class="card-title text-primary pt-4">Contact Form</h5>
+              <a href="#contact-form-anchor"><button type="button" class="btn btn-primary small">Go To Form</button></a>
             </div>
           </div>
         </div>
@@ -106,31 +142,17 @@
     <div class="container-fluid mb-5">
       <div class="card w-90 m-auto pt-0 text-center">
         <div class="card-body">
-          <h5 class="card-title text-primary">What To Expect From A Free Consultation</h5>
-          <p class="card-text">Consultations are informal discussions to help me assess your needs and understand how I can support you. They are usually conducted over the phone and typically cover the following points:<p>
+          <h5 class="card-title text-primary">Get The Most Out Of Your Free Consultation</h5>
+          <p>I recommend allowing 30 minutes for an initial consultation to ensure there is adequate time to cover off the important early details. They are commitment-free discussions that typically cover the areas listed below. If possible, try and provide details on these topics ahead of the conversation via email or the contact form. This will allow me to give you a quick and detailed summary of how I can assist you. </p>
             <ul class="list-unstyled">
-              <li>An introduction to your organisation and its services</li>
-              <li>Your objective(s) and KPIs</li>
-              <li>Preliminary scope of the work needing to be carried out</li>
-              <li>Resource and expertise requirements</li>
-              <li>Priorities / Timelines</li>
-              <li>Budgets (if available)</li>
-              <li>Consulting Cost</li>
+              <li class="pt-2">- Intro to your organisation</li>
+              <li class="pt-2">- Objective(s) and KPIs</li>
+              <li class="pt-2">- Scope of work</li>
+              <li class="pt-2">- Resource requirements</li>
+              <li class="pt-2">- Priorities / Timelines</li>
+              <li class="pt-2">- Budgets (if available)</li>
+              <li class="pt-2">- Consulting Costs</li>
             </ul>
-            <a href="#moretext" class="btn btn-link" data-toggle="collapse" aria-expanded="false" aria-controls="moretext">
-              <span class="collapsed text-decoration-none">
-                Read more
-              </span>
-              <span class="expanded text-decoration-none">
-                Read less
-              </span>
-            </a>
-          </p>
-          <div class="collapse" id="moretext">
-            <p>I recommend you allow approximately one hour for the consultation to ensure there is adequate time to cover off the important early details. In general, the conversation will be more productive if you provide as much information as you can ahead of the call.
-  Please remember, this is a commitment-free discussion and you are not obliged to utilise my services after we’ve spoken!</p>
-              <a href="#contact-form-anchor"><button class="btn btn-primary">Contact</button></a>
-            </div>
           </div>
         </div>
       </div>
@@ -145,9 +167,10 @@
 
   <!-- Footer -->
 
-
   <footer class="container-fluid bg-black pt-5 pb-5 mt-5 text-center footer">
-    <img src="./Assets\favicons\favicon-32x32.png" /><p class="text-light small pt-2">Website created by Cameron Lund</p>
+    <img src="./Assets\favicons\favicon-32x32.png" />
+    <p class="text-light small pt-2">Website created by Cameron Lund</p>
+    <a target="_blank" href="https://www.linkedin.com/in/cameronlund/"><img style="width:24px;" src="./Assets\Companies\linkedin-transparent.png" /></a>
   </footer>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
