@@ -1,7 +1,11 @@
-.w-90 {
-  width: 90%;
+span {
+  font-style: Montserrat;
 }
 
+.w-90 {
+  width: 90%;
+  max-width: 1200px;
+}
 
 .title {
   font-family: 'Oswald', sans-serif;
@@ -44,6 +48,19 @@
     height: 562px;
 }
 
+.blog-image {
+    border-top: solid 7px #F50D7F;
+    background-image: url('../Assets/Jumbotron/jumbotron-blog-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 562px;
+}
+
+.blog-image-logo {
+  width: 280px;
+  height: auto;
+}
 
 .profile-picture {
     border-radius: 50%;
@@ -152,6 +169,13 @@
 
 /* Desktop Media Queries */
 
+
+@media only screen and (min-width: 480px) {
+  .blog-image-logo {
+    float: left;
+  }
+}
+
 @media only screen and (min-width: 374px) {
 
   .card-container {
@@ -210,6 +234,11 @@
   .contact-image {
       background-image: url('../Assets/Jumbotron/jumbotron-background-desktop-contact.png');
   }
+
+  .blog-image {
+      background-image: url('../Assets/Jumbotron/jumbotron-blog-desktop.png');
+  }
+
 
   .carousel-text {
     padding-left: 15px;
